@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+   }
+   
+   .board{
+    border: 8px solid black;
+    position: absolute;
+    top: 10vh;
+    left: 8vw;
+    min-width: 80vw;
+    min-height: 80vh;
+   }
+   
+   .row{
+    display: flex;
+    position: absolute;
+    /* border: 1px solid black; */
+   }
+   
+   .south{
+    flex-direction: row-reverse;
+    min-width: 67vw;
+    min-height: 20vh;
+    max-width: 67vw;
+    max-height: 20vh;
+    bottom: 0;
+    right: 0;
+   }
+   
+   .west{
+    flex-direction: column-reverse;
+    min-width: 12.95vw;
+    max-width: 12.95vw;
+    min-height: 60vh;
+    max-height: 60vh;
+    bottom: 0vh;
+    left: 0vw;
+   }
+   
+   .north{
+    flex-direction: row;
+    min-width: 67vw;
+    max-width: 67vw;
+    min-height: 20vh;
+    max-height: 20vh;
+    top: 0vh;
+    left: 0vw;
+   }
+   
+   .east{
+    flex-direction: column;
+    min-width: 12.95vw;
+    max-width: 12.95vw;
+    min-height: 60vh;
+    max-height: 60vh;
+    top: 0vh;
+    right: 0vw;
+   }
+   
+   .spot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   }
+   
+   .south .spot{
+    border: 1px solid blue;
+    border-bottom: 0;
+    flex: 1;
+   }
+   
+   .south .end{
+    flex: 1.45;
+   }
+   
+   .west .spot{
+    border: 1px solid red; border-left: 0; flex: 1;
+   }
+   
+   .west .end{ flex: 1.53; }
+   
+   .north .spot{
+    border: 1px solid green; border-top: 0; flex: 1;
+   }
+   
+   .north .end{ flex: 1.46; }
+   
+   .east .spot{
+    border: 1px solid orange; border-right: 0; flex: 1;
+   }
+   
+   .east .end{ flex: 1.53; }
+   
+   .die{
+    position: absolute;
+    top: 39vh;
+    left: 43vw;
+    min-width: 13vw;
+    max-width: 13vw;
+   }
+   
+   .die img{
+    width: 100%;
+   }
+   
+   .roll{
+    z-index: 10;
+    position: absolute;
+    top: 33%;
+    left: 40%;
+    font-size: 40px;
+   }
+   
+   .player{
+    border: 1px solid black;
+    font-size: 170%;
+    text-align: center;
+    border-radius: 50%;
+    min-width: 25px;
+    max-width: 50px;
+    min-height: 25px;
+    max-height: 30px;
+   }
